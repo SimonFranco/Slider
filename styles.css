@@ -1,0 +1,139 @@
+:root{
+    --width:500px;
+    --gameWidth: 600px
+}
+html{
+    background-color: rgb(12, 10, 59);
+
+}
+body{
+    background-color: rgb(12, 10, 59);
+
+}
+*{margin:0px;
+ padding: 0; 
+ background-color: black;
+}
+#game{
+    width: var(--gameWidth);
+    height: 615px;
+    margin: auto;
+    border: 7px solid black;;
+    margin-top: 50px;
+    background-color: black;
+    background-image: url(./assets/pngtree-neon-grid-landscape-with-80s-retro-wave-game-style-image_1394433.jpeg) ;
+
+
+}
+#btn{
+    font-size: 2rem;
+    padding: 0.5rem 2rem;
+    border: 5.5px solid black;
+    border-radius: 0.3rem;
+    margin: 1rem auto;
+    display: block;
+    background-color: rgb(18, 13, 133);
+    color: rgb(151, 247, 252);
+
+}
+#btn:active{
+    background-color: gray;
+}
+.slider{
+    visibility: hidden;
+    background-color: black;
+    height: 20px;
+    width: 100px;
+    border: 1.5px solid  rgb(151, 247, 252);
+    position: relative;
+    z-index: 1;
+}
+#slider1{
+    visibility: visible;
+    background-color: black;
+    border: 1.5px solid;
+    border-color:rgb(151, 247, 252);
+}
+.animate{
+    animation: slide 4s infinite linear;
+}
+@keyframes slide{
+    0%{ left:0px;}
+    50%{ left:var(--width)}
+    100%{ left:0px;}
+}
+#slider27{
+    width: 100%;
+    text-align: center;
+     background-color: transparent; 
+     border: none;
+    visibility: visible;
+    color:rgb(151, 247, 252);
+    font-size: 25px;
+}
+#slider26{
+        background-color: transparent;
+        border: none;
+}
+#lostModal{
+    color: rgb(151, 247, 252);
+    display: none;
+    height: 105px;
+    width: 300px;
+    z-index: 1;
+    background-color: black;
+    margin: auto;
+    position: relative;
+    top: -650px;
+    border-style: groove;
+    border: 1px  solid rgb(151, 247, 252);
+    
+
+}
+.modal #h11{
+    color: rgb(151, 247, 252);
+    background-color: black;
+    text-align: center;
+    height: 80px;
+   font-size:  30gitpx;
+}
+.modal #btn2{
+    background-color:black ;
+    align-items: baseline;
+    color: rgb(151, 247, 252);
+    border: 1px solid rgb(151, 247, 252);
+}
+#btn2{
+    width: 100%;
+    height: 25px;
+}
+#btn3{
+    width: 100%;
+    height: 25px;
+}
+.modal #btn3{
+    background-color:black ;
+    align-items: baseline;
+    color: rgb(151, 247, 252);
+}
+.modal #h12 {
+    color: rgb(151, 247, 252);
+    background-color: black;
+    text-align: center;
+    height: 80px;
+   font-size:  30px;
+}
+#wonModal{
+    color: rgb(151, 247, 252);
+    display: none;
+    height: 105px;
+    width: 300px;
+    z-index: 1;
+    background-color: black;
+    margin: auto;
+    position: relative;
+    top: -650px;
+    border-style: groove;
+    border: 1px  solid rgb(151, 247, 252);
+    
+}

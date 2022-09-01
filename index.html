@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Game</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    
+    <div id='game'></div>
+    <button onclick="stopSliding(1)" id="btn">Stack</button>
+    <div id = 'lostModal' class = 'modal'>
+        <h1 id = 'h11'>Your score: </h1>
+        <!-- <p>Press restart to play again</p> -->
+        <button id = 'btn2' onclick="location.reload()">Restart</button>
+    </div>
+    <div id = 'wonModal' class="modal">
+        <h1 id = 'h12'>You Won!</h1>
+        <h2 id = 'h2'></h2>
+        <!-- <p>Press restart to play again</p> -->
+        <button id = 'btn3' onclick="location.reload()">Restart</button>
+
+    </div>
+    
+
+    <script src="./index.js"></script>
+</body>
+</html>
